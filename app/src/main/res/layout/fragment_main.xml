@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,11 +9,11 @@
     tools:showIn="@layout/activity_main"
     tools:context="com.coolbreeze.android.indiaweather.MainActivityFragment">
 
-    <TextView
-        android:text="Hello World!"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <ListView
+        style="@style/ForecastListStyle"
+        android:id="@+id/listview_forecast"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@null" />
 
-
-
-</RelativeLayout>
+</FrameLayout>
